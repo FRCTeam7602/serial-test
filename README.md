@@ -33,6 +33,8 @@ $ java -Djava.library.path=/usr/lib/jni -cp /usr/share/java/RXTXcomm.jar:. FadeW
 
 The cap and resistor on the RST are to prevent the Pro Micro from starting in ultra-mega slow mode when plugged in.  A blue LED was chosen set on pin 5 because 5 is a nice number.
 
+![circuit w arduino pro micro 5v](serial-test-fritzing.png)
+
 # Output
 
 The Arduino code runs automatically after upload and you'll know it is working because the LED will fade on and off.  The Raspberry Pi will show some output: it will send a random number to the Arduino and then, after the light blinks on the Arduino, it will print out the number of blinks that you should have seen.  The number is actually an echo back from the Arduino on the serial port.
